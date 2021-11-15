@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>realtime_plot</class>
- <widget class="QWidget" name="realtime_plot">
+ <class>RealtimePlotter</class>
+ <widget class="QWidget" name="RealtimePlotter">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -30,7 +30,7 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QCustomPlot" name="realtime_plotter" native="true"/>
+    <widget class="QCustomPlot" name="RealtimePlotterter" native="true"/>
    </item>
   </layout>
  </widget>

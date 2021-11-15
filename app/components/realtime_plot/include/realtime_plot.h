@@ -1,22 +1,21 @@
-#ifndef REALTIME_PLOT_H
-#define REALTIME_PLOT_H
+#ifndef RealtimePlotter_H
+#define RealtimePlotter_H
 
 #include <QWidget>
 
 namespace Ui {
-class realtime_plot;
+class RealtimePlotter;
 }
 
-class realtime_plot : public QWidget
-{
-    Q_OBJECT
+class RealtimePlotter : public QWidget {
+  Q_OBJECT
 
 public:
-    explicit realtime_plot(QWidget *parent = nullptr);
-    ~realtime_plot();
+  explicit RealtimePlotter(QWidget *parent = nullptr);
+  ~RealtimePlotter();
 
 private:
-    Ui::realtime_plot *ui;
+  Ui::RealtimePlotter *ui;
 };
 
-#endif // REALTIME_PLOT_H
+#endif // RealtimePlotter_H

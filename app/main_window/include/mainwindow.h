@@ -50,5 +50,8 @@ private:
 
   // Copilot object
   Copilot copilot_1;
+
+  // Realtime plotter
+  RealtimePlotter plot_1;
 };
 #endif // MAINWINDOW_H

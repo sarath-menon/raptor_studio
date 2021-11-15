@@ -1,9 +1,9 @@
 #include "realtime_plot.h"
 #include "ui_realtime_plot.h"
 
-realtime_plot::realtime_plot(QWidget *parent)
-    : QWidget(parent), ui(new Ui::realtime_plot) {
+RealtimePlotter::RealtimePlotter(QWidget *parent)
+    : QWidget(parent), ui(new Ui::RealtimePlotter) {
   ui->setupUi(this);
 }
 
-realtime_plot::~realtime_plot() { delete ui; }
+RealtimePlotter::~RealtimePlotter() { delete ui; }
