@@ -23,11 +23,18 @@ ${SRC_FILES}
 
 target_include_directories(raptor_studio PUBLIC include)
 
+# QT depenencies
 target_link_libraries(raptor_studio PRIVATE 
 Qt${QT_VERSION_MAJOR}::Widgets 
 Qt${QT_VERSION_MAJOR}::PrintSupport
+)
+
+# Other dependencies
+target_link_libraries(raptor_studio PRIVATE 
+copilot_lib
 comm_lib
 )
+
 
 set_target_properties(raptor_studio PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

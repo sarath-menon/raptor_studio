@@ -3,6 +3,7 @@
 
 #include "fastdds_thread.h"
 #include "quad_obj.h"
+#include "copilot.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -45,5 +46,10 @@ private:
 
   // Quadcopter object
   quad_obj *quad_1;
+
+  // Copilot object
+  Copilot copilot_1;
+
+
 };
 #endif // MAINWINDOW_H
