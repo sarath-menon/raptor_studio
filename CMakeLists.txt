@@ -14,3 +14,4 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets PrintSupport REQUIRED)
 
 add_subdirectory(app)
 add_subdirectory(lib)
+add_subdirectory(external)

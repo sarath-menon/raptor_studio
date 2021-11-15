@@ -1,9 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "copilot.h"
 #include "fastdds_thread.h"
 #include "quad_obj.h"
-#include "copilot.h"
+#include "realtime_plot.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -49,7 +50,5 @@ private:
 
   // Copilot object
   Copilot copilot_1;
-
-
 };
 #endif // MAINWINDOW_H
