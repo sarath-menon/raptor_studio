@@ -30,7 +30,7 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QCustomPlot" name="RealtimePlotterter" native="true"/>
+    <widget class="QCustomPlot" name="plot" native="true"/>
    </item>
   </layout>
  </widget>

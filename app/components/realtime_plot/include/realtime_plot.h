@@ -15,6 +15,16 @@ public:
   ~RealtimePlotter();
 
 private:
+  // Parameters
+  // Distance to cover in plots [meters]
+  constexpr static float x_range{5};
+  constexpr static float y_range{5};
+  constexpr static float z_range{5};
+
+  // Plot line width
+  constexpr static float line_width = 2.5;
+
+private:
   Ui::RealtimePlotter *ui;
 };
 
