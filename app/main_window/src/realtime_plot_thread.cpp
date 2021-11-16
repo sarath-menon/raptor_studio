@@ -8,7 +8,7 @@ RealtimePlotThread::RealtimePlotThread(QVBoxLayout *layout, QObject *parent)
   // Fastdds ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
   // Create domain participant
-  dp = std::make_unique<DefaultParticipant>(0, "godot_visualizer_qos");
+  dp = std::make_unique<DefaultParticipant>(0, "raptor_studio");
 
   // Create  subscriber
   mocap_sub = new DDSSubscriber(idl_msg::MocapPubSubType(), &sub::mocap_msg,
@@ -43,5 +43,6 @@ void RealtimePlotThread::run() { // Blocks until new data is available
     mocap_sub->listener->wait_for_data_for_ms(100);
 
     // Update y_val with latest data from subscriber
+    plot->set_y_val(sub::mocap_msg.pose.position.x);
   };
 }
