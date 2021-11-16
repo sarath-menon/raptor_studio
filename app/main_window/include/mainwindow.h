@@ -4,7 +4,7 @@
 #include "copilot.h"
 #include "fastdds_thread.h"
 #include "quad_obj.h"
-#include "realtime_plot.h"
+#include "realtime_plot_thread.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -39,6 +39,8 @@ private:
 private:
   std::unique_ptr<fastdds_thread> obj;
 
+  std::unique_ptr<RealtimePlotThread> plot_obj;
+
   // Parameters
   // Distance to cover in plots [meters]
   constexpr static float x_range{5};
@@ -54,7 +56,7 @@ private:
   // Copilot object
   Copilot copilot_1;
 
-  // Realtime plotter
-  RealtimePlotter *plot_1;
+  // // Realtime plotter
+  // RealtimePlotter *plot_1;
 };
 #endif // MAINWINDOW_H

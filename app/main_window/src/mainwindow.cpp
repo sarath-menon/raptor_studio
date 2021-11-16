@@ -154,14 +154,14 @@ MainWindow::MainWindow(QWidget *parent)
 
   quad_obj_layout->insertWidget(0, quad_1);
 
-  // Create new plot
-  plot_1 = new RealtimePlotter();
+  //   // Create new plot
+  //   plot_1 = new RealtimePlotter();
 
   // add plot to layout
   QVBoxLayout *plot_layout =
       qobject_cast<QVBoxLayout *>(ui->plots_frame->layout());
 
-  plot_layout->insertWidget(0, plot_1);
+  //   plot_layout->insertWidget(0, plot_1);
 
   //   // Set titlebar text
   //   ui->statusbar->showMessage(QString("selva"));
@@ -169,16 +169,23 @@ MainWindow::MainWindow(QWidget *parent)
   obj = std::make_unique<fastdds_thread>(ui->x_plot, ui->y_plot, ui->z_plot,
                                          ui->statusbar);
   obj->start();
+
+  plot_obj = std::make_unique<RealtimePlotThread>(plot_layout);
+  plot_obj->start();
 }
 
 MainWindow::~MainWindow() {
   obj->quit();
   obj->requestInterruption();
-
   obj->wait();
-  delete ui;
 
+  plot_obj->quit();
+  plot_obj->requestInterruption();
+  plot_obj->wait();
+
+  delete ui;
   delete quad_1;
+  //   delete plot_1;
 }
 
 // Clear all plots

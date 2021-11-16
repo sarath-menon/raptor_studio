@@ -5,16 +5,18 @@
 #include "default_subscriber.h"
 #include "geometry_msgs/msgs/Position.h"
 #include "qcustomplot.h"
+#include "realtime_plot.h"
 #include "sub_variables.h"
 #include <QDebug>
 #include <QStatusBar>
 #include <QThread>
+#include <QVBoxLayout>
 
 class RealtimePlotThread : public QThread {
   Q_OBJECT
 
 public:
-  explicit RealtimePlotThread(QCustomPlot *x_plot, QObject *parent = nullptr);
+  explicit RealtimePlotThread(QVBoxLayout *layout, QObject *parent = nullptr);
   ~RealtimePlotThread();
 
   void run();
@@ -27,9 +29,11 @@ public:
   DDSSubscriber<idl_msg::MocapPubSubType, cpp_msg::Mocap> *mocap_sub;
 
 private:
-  // Pointer to plots
-  QCustomPlot *x_plot_;
-  QCustomPlot *y_plot_;
+  // Pointer to plot layout
+  QVBoxLayout *layout_;
+
+  // Realtime plotter
+  RealtimePlotter *plot;
 
   // parameters
   // Scrolling spped [lower is more]

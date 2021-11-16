@@ -2,7 +2,7 @@
 #include <qglobal.h>
 #include <qthread.h>
 
-RealtimePlotThread::RealtimePlotThread(QCustomPlot *x_plot, QObject *parent)
+RealtimePlotThread::RealtimePlotThread(QVBoxLayout *layout, QObject *parent)
     : QThread(parent) {
 
   // Fastdds ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
@@ -16,10 +16,21 @@ RealtimePlotThread::RealtimePlotThread(QCustomPlot *x_plot, QObject *parent)
 
   // initialize  subscriberDefaultParticipant
   mocap_sub->init();
+
+  // Set pointer to ui layout
+  layout_ = layout;
+
+  // Create new plot
+  plot = new RealtimePlotter();
+
+  // Insert plot in layout
+  layout->insertWidget(0, plot);
 }
 
 RealtimePlotThread::~RealtimePlotThread() { // Fastdds
   delete mocap_sub;
+
+  delete plot;
 }
 
 void RealtimePlotThread::run() { // Blocks until new data is available
