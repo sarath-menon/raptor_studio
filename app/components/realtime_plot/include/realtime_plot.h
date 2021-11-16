@@ -1,6 +1,7 @@
 #ifndef RealtimePlotter_H
 #define RealtimePlotter_H
 
+#include <QStatusBar>
 #include <QTimer>
 #include <QWidget>
 
@@ -30,6 +31,9 @@ private:
 
   // To keep track of time
   QTimer dataTimer;
+
+  // status bar to show fps
+  QStatusBar status_bar;
 
   // parameters
   // Scrolling spped [lower is more]

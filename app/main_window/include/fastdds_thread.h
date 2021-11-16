@@ -8,8 +8,8 @@
 #include "qcustomplot.h"
 #include "sub_variables.h"
 #include <QDebug>
+#include <QStatusBar>
 #include <QThread>
-#include <qstatusbar.h>
 
 class fastdds_thread : public QThread {
   Q_OBJECT
@@ -45,7 +45,6 @@ private:
   constexpr static int scroll_speed = 5;
   // scrren refresing [in seconds]
   constexpr static float refresh_time = 0.040;
-  
 
 public slots:
   void realtimePlot();

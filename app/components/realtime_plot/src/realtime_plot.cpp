@@ -93,4 +93,24 @@ void RealtimePlotter::update_plot() {
     // ui->plot_ ->>graph(1)->rescaleValueAxis(true);
     last_time = cur_time;
   }
+
+  // make key axis range scroll with the data at ocnstant speed
+  ui->plot->xAxis->setRange(cur_time, scroll_speed, Qt::AlignRight);
+
+  ui->plot->replot();
+
+  // calculate frames per second:
+  static double lastFpsKey{};
+  static int frameCount{};
+  ++frameCount;
+
+  if (cur_time - lastFpsKey > 2) // average fps over 2 seconds
+  {
+    status_bar.showMessage(
+        QString("%1 FPS").arg(frameCount / (cur_time - lastFpsKey), 0, 'f', 0),
+        0);
+
+    lastFpsKey = cur_time;
+    frameCount = 0;
+  }
 }
