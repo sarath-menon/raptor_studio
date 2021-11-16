@@ -59,6 +59,16 @@ RealtimePlotter::RealtimePlotter(QWidget *parent)
   auto plot_pen = ui->plot->graph(0)->pen();
   plot_pen.setWidthF(line_width);
   ui->plot->graph(0)->setPen(plot_pen);
+
+  // make left and bottom axes transfer their ranges to right and top axes:
+  connect(ui->plot->xAxis, SIGNAL(rangeChanged(QCPRange)), ui->plot->xAxis2,
+          SLOT(setRange(QCPRange)));
+  connect(ui->plot->yAxis, SIGNAL(rangeChanged(QCPRange)), ui->plot->yAxis2,
+          SLOT(setRange(QCPRange)));
+
+  // setup a timer that repeatedly calls MainWindow::realtimeDataSlot:
+  connect(&dataTimer, SIGNAL(timeout()), this, SLOT(realtimePlot()));
+  dataTimer.start(0); // Interval 0 means to refresh as fast as possible
 }
 
 RealtimePlotter::~RealtimePlotter() { delete ui; }

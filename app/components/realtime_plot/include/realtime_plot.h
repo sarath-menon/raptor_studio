@@ -1,6 +1,7 @@
 #ifndef RealtimePlotter_H
 #define RealtimePlotter_H
 
+#include <QTimer>
 #include <QWidget>
 
 namespace Ui {
@@ -26,6 +27,9 @@ private:
 
 private:
   Ui::RealtimePlotter *ui;
+
+  // To keep track of time
+  QTimer dataTimer;
 };
 
 #endif // RealtimePlotter_H
