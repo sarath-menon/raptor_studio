@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>955</width>
+    <height>178</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,14 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QCustomPlot" name="plot" native="true"/>
+    <widget class="QCustomPlot" name="plot" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>955</width>
+       <height>178</height>
+      </size>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

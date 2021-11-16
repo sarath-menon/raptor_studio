@@ -42,7 +42,7 @@ private:
   constexpr static float refresh_time = 0.040;
 
   // Graph value
-  float y_val{};
+  float y_val = 5.0;
 
 public slots:
   void update_plot();
