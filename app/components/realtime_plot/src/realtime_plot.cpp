@@ -85,7 +85,7 @@ void RealtimePlotter::update_plot() {
   if (diff > refresh_time) // at most add point every 2 ms
   {
     // add data to lines:
-    ui->plot->graph(0)->addData(cur_time, y_val);
+    ui->plot->graph(0)->addData(cur_time, y_val_);
 
     // rescale value (vertical) axis to fit the current data:
     ui->plot->graph(0)->rescaleValueAxis();

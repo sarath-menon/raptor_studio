@@ -1,5 +1,4 @@
-#ifndef FASTDDS_THREAD_H
-#define FASTDDS_THREAD_H
+#pragma once
 
 #include "PositionPubSubTypes.h"
 #include "default_participant.h"
@@ -49,5 +48,3 @@ private:
 public slots:
   void realtimePlot();
 };
-
-#endif // FASTDDS_THREAD_H

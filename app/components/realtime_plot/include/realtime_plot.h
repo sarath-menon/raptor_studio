@@ -1,5 +1,4 @@
-#ifndef RealtimePlotter_H
-#define RealtimePlotter_H
+#pragma once
 
 #include <QStatusBar>
 #include <QTimer>
@@ -26,6 +25,7 @@ private:
   // Plot line width
   constexpr static float line_width = 2.5;
 
+  // QT tyes
 private:
   Ui::RealtimePlotter *ui;
 
@@ -35,6 +35,8 @@ private:
   // status bar to show fps
   QStatusBar status_bar;
 
+  // normal and custom types
+private:
   // parameters
   // Scrolling spped [lower is more]
   constexpr static int scroll_speed = 5;
@@ -42,10 +44,11 @@ private:
   constexpr static float refresh_time = 0.040;
 
   // Graph value
-  float y_val = 5.0;
+  float y_val_{};
 
 public slots:
   void update_plot();
-};
 
-#endif // RealtimePlotter_H
+  // Set k_p gain
+  void set_y_val(float y_val) { y_val_ = y_val; }
+};
