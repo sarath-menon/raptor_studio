@@ -67,8 +67,30 @@ RealtimePlotter::RealtimePlotter(QWidget *parent)
           SLOT(setRange(QCPRange)));
 
   // setup a timer that repeatedly calls MainWindow::realtimeDataSlot:
-  connect(&dataTimer, SIGNAL(timeout()), this, SLOT(realtimePlot()));
+  connect(&dataTimer, SIGNAL(timeout()), this, SLOT(update_plot()));
   dataTimer.start(0); // Interval 0 means to refresh as fast as possible
 }
 
 RealtimePlotter::~RealtimePlotter() { delete ui; }
+
+void RealtimePlotter::update_plot() {
+  static double last_time = 0;
+
+  // calculate time elapsed since start of demo, in seconds
+
+  QTime tm = QTime::currentTime();
+  double cur_time = tm.msecsSinceStartOfDay() / 1000.0;
+  double diff = cur_time - last_time;
+
+  if (diff > refresh_time) // at most add point every 2 ms
+  {
+    // add data to lines:
+    ui->plot->graph(0)->addData(cur_time, y_val);
+
+    // rescale value (vertical) axis to fit the current data:
+    ui->plot->graph(0)->rescaleValueAxis();
+
+    // ui->plot_ ->>graph(1)->rescaleValueAxis(true);
+    last_time = cur_time;
+  }
+}
