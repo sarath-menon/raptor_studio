@@ -21,7 +21,10 @@ public:
   ~MainWindow();
 
 private slots:
-  void on_param_select_btn_clicked();
+  void on_realtime_select_btn_clicked();
+
+private slots:
+  void on_jarvis_select_btn_clicked();
 
 private slots:
   void on_plotter_select_btn_clicked();
@@ -52,6 +55,6 @@ private:
   Copilot copilot_1;
 
   // Realtime plotter
-  RealtimePlotter plot_1;
+  RealtimePlotter *plot_1;
 };
 #endif // MAINWINDOW_H

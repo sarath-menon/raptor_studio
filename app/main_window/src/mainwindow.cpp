@@ -145,22 +145,30 @@ MainWindow::MainWindow(QWidget *parent)
   ui->z_plot->setBackground(plotGradient);
   ui->z_plot->axisRect()->setBackground(axisRectGradient);
 
+  // Quad priperties window
+  quad_1 = new quad_obj();
+
+  // Add quad object to layout
+  QVBoxLayout *quad_obj_layout =
+      qobject_cast<QVBoxLayout *>(ui->parameters_frame->layout());
+
+  quad_obj_layout->insertWidget(0, quad_1);
+
+  // Create new plot
+  plot_1 = new RealtimePlotter();
+
+  // add plot to layout
+  QVBoxLayout *plot_layout =
+      qobject_cast<QVBoxLayout *>(ui->plots_frame->layout());
+
+  plot_layout->insertWidget(0, plot_1);
+
   //   // Set titlebar text
   //   ui->statusbar->showMessage(QString("selva"));
 
   obj = std::make_unique<fastdds_thread>(ui->x_plot, ui->y_plot, ui->z_plot,
                                          ui->statusbar);
   obj->start();
-
-  // Quad priperties window
-  quad_1 = new quad_obj();
-
-  // Create horizontal layout
-  QVBoxLayout *quad_obj_layout = qobject_cast<QVBoxLayout*>(ui->parameters_frame->layout());
-
-  // Add quad object to layout
-  quad_obj_layout->insertWidget(0,quad_1);
-
 }
 
 MainWindow::~MainWindow() {
@@ -180,12 +188,14 @@ void MainWindow::on_clear_btn_clicked() {
   ui->z_plot->graph(0)->data()->clear();
 }
 
-void MainWindow::on_plotter_select_btn_clicked()
-{
-    ui->app_pages->setCurrentWidget(ui->plots_page);
+void MainWindow::on_plotter_select_btn_clicked() {
+  ui->app_pages->setCurrentWidget(ui->plots_page);
 }
 
-void MainWindow::on_param_select_btn_clicked()
-{
-    ui->app_pages->setCurrentWidget(ui->parameters_page);
+void MainWindow::on_jarvis_select_btn_clicked() {
+  ui->app_pages->setCurrentWidget(ui->jarvis_page);
+}
+
+void MainWindow::on_realtime_select_btn_clicked() {
+  ui->app_pages->setCurrentWidget(ui->realtime_plots_page);
 }

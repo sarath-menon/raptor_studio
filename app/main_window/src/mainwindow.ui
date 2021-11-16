@@ -102,29 +102,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="param_select_btn">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>50</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 0);</string>
-            </property>
-            <property name="text">
-             <string>Parameters</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="jarvis_btn">
+           <widget class="QPushButton" name="jarvis_select_btn">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -146,7 +124,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="parameters_select_btn">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -163,7 +141,29 @@
              <string notr="true">background-color: rgb(255, 255, 0);</string>
             </property>
             <property name="text">
-             <string>Logger</string>
+             <string>Parameters</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="realtime_select_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 0);</string>
+            </property>
+            <property name="text">
+             <string>realtime</string>
             </property>
            </widget>
           </item>
@@ -209,10 +209,10 @@
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="realtime_plots_pae">
+         <widget class="QWidget" name="realtime_plots_page">
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
-            <widget class="QFrame" name="frame_2">
+            <widget class="QFrame" name="plots_frame">
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -238,7 +238,7 @@
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="parameters_page">
+         <widget class="QWidget" name="jarvis_page">
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <property name="spacing">
             <number>0</number>
