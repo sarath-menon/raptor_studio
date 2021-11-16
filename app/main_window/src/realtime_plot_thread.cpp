@@ -21,16 +21,14 @@ RealtimePlotThread::RealtimePlotThread(QVBoxLayout *layout, QObject *parent)
   layout_ = layout;
 
   // Create new plot
-  plot = new RealtimePlotter();
+  plot = std::make_unique<RealtimePlotter>();
 
   // Insert plot in layout
-  layout->insertWidget(0, plot);
+  layout->insertWidget(0, plot.get());
 }
 
 RealtimePlotThread::~RealtimePlotThread() { // Fastdds
   delete mocap_sub;
-
-  delete plot;
 }
 
 void RealtimePlotThread::run() { // Blocks until new data is available
@@ -43,5 +41,7 @@ void RealtimePlotThread::run() { // Blocks until new data is available
     }
 
     mocap_sub->listener->wait_for_data_for_ms(100);
+
+    // Update y_val with latest data from subscriber
   };
 }

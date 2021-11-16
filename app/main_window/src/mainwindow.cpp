@@ -154,17 +154,9 @@ MainWindow::MainWindow(QWidget *parent)
 
   quad_obj_layout->insertWidget(0, quad_1);
 
-  //   // Create new plot
-  //   plot_1 = new RealtimePlotter();
-
   // add plot to layout
   QVBoxLayout *plot_layout =
       qobject_cast<QVBoxLayout *>(ui->plots_frame->layout());
-
-  //   plot_layout->insertWidget(0, plot_1);
-
-  //   // Set titlebar text
-  //   ui->statusbar->showMessage(QString("selva"));
 
   obj = std::make_unique<fastdds_thread>(ui->x_plot, ui->y_plot, ui->z_plot,
                                          ui->statusbar);
