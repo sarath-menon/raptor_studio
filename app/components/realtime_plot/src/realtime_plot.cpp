@@ -82,7 +82,7 @@ void RealtimePlotter::update_plot() {
   double cur_time = tm.msecsSinceStartOfDay() / 1000.0;
   double diff = cur_time - last_time;
 
-  if (diff > refresh_time) // at most add point every 2 ms
+  if (diff > refresh_time_) // at most add point every 2 ms
   {
     // add data to lines:
     ui->plot->graph(0)->addData(cur_time, y_val_);
@@ -95,7 +95,7 @@ void RealtimePlotter::update_plot() {
   }
 
   // make key axis range scroll with the data at ocnstant speed
-  ui->plot->xAxis->setRange(cur_time, scroll_speed, Qt::AlignRight);
+  ui->plot->xAxis->setRange(cur_time, scroll_speed_, Qt::AlignRight);
 
   ui->plot->replot();
 
