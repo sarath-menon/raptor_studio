@@ -3,10 +3,12 @@ set(SRC_FILES
         src/mainwindow.cpp
         src/mainwindow.ui
         src/fastdds_thread.cpp
+        src/realtime_plot_thread.cpp
 )
 
 set(HEADER_FILES
         include/fastdds_thread.h
+        include/realtime_plot_thread.h
         include/mainwindow.h
         include/sub_variables.h     
 )
