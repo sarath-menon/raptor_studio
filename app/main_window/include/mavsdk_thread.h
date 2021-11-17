@@ -42,4 +42,10 @@ private:
   QVBoxLayout *layout_;
 
   // parameters
+
+  // mavsdk types
+private:
+  mavsdk::Mavsdk mavsdk;
+  mavsdk::ConnectionResult connection_result =
+      mavsdk.add_any_connection("udp://:14540");
 };
