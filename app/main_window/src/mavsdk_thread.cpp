@@ -49,6 +49,35 @@ MavsdkThread::MavsdkThread(QVBoxLayout *layout, QObject *parent)
 
   // Set pointer to ui layout
   layout_ = layout;
+
+  auto system = get_system(mavsdk);
+  if (!system) {
+    std::cout << "Could not get system" << std::endl;
+  }
+
+  if (connection_result != mavsdk::ConnectionResult::Success) {
+    std::cerr << "Connection failed: " << connection_result << '\n';
+  }
+
+  // Instantiate pluginis.
+  auto telemetry = mavsdk::Telemetry{system};
+  auto action = mavsdk::Action{system};
+
+  // // We want to listen to the altitude of the drone at 1 Hz.
+  // const mavsdk::Telemetry::Result set_rate_result =
+  //     telemetry.set_rate_position(1.0);
+
+  // // Set telemetry rate with erorr checking
+  // if (set_rate_result != mavsdk::Telemetry::Result::Success) {
+  //   std::cerr << "Setting rate failed: " << set_rate_result << '\n';
+  // }
+
+  // std::cout << "selva";
+
+  // // Set up callback to monitor altitude while the vehicle is in flight
+  // telemetry.subscribe_position([](mavsdk::Telemetry::Position position) {
+  //   std::cout << "Altitude: " << position.relative_altitude_m << " m\n";
+  // });
 }
 
 MavsdkThread::~MavsdkThread() { // Fastdds

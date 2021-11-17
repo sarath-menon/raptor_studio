@@ -165,6 +165,10 @@ MainWindow::MainWindow(QWidget *parent)
   //   // New modular plots. Needs debugging
   //   realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
   //   realtime_plots->start();
+
+  // mavsdk interface
+  mavsdk_thread = std::make_unique<MavsdkThread>(plot_layout);
+  mavsdk_thread->start();
 }
 
 MainWindow::~MainWindow() {
@@ -175,6 +179,10 @@ MainWindow::~MainWindow() {
   //   realtime_plots->quit();
   //   realtime_plots->requestInterruption();
   //   realtime_plots->wait();
+
+  mavsdk_thread->quit();
+  mavsdk_thread->requestInterruption();
+  mavsdk_thread->wait();
 
   delete ui;
 }

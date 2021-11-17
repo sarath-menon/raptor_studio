@@ -3,6 +3,7 @@
 
 #include "copilot.h"
 #include "fastdds_thread.h"
+#include "mavsdk_thread.h"
 #include "quad_window.h"
 #include "realtime_plot_thread.h"
 #include <QMainWindow>
@@ -59,5 +60,8 @@ private:
 
   // // Realtime plotter
   // RealtimePlotter *plot_1;
+
+  // mavsdk interface
+  std::unique_ptr<MavsdkThread> mavsdk_thread;
 };
 #endif // MAINWINDOW_H
