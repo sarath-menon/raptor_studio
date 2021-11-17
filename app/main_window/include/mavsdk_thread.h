@@ -48,4 +48,7 @@ private:
   mavsdk::Mavsdk mavsdk;
   mavsdk::ConnectionResult connection_result =
       mavsdk.add_any_connection("udp://:14540");
+
+  std::unique_ptr<mavsdk::Telemetry> telemetry;
+  std::unique_ptr<mavsdk::Action> action;
 };

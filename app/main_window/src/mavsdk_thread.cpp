@@ -60,8 +60,8 @@ MavsdkThread::MavsdkThread(QVBoxLayout *layout, QObject *parent)
   }
 
   // Instantiate pluginis.
-  auto telemetry = mavsdk::Telemetry{system};
-  auto action = mavsdk::Action{system};
+  telemetry = std::make_unique<mavsdk::Telemetry>(system);
+  action = std::make_unique<mavsdk::Action>(system);
 
   // // We want to listen to the altitude of the drone at 1 Hz.
   // const mavsdk::Telemetry::Result set_rate_result =
@@ -85,6 +85,14 @@ MavsdkThread::~MavsdkThread() { // Fastdds
 }
 
 void MavsdkThread::run() { // Blocks until new data is available
+
+  // // Arm vehicle
+  // std::cout << "Arming...\n";
+  // const mavsdk::Action::Result arm_result = action.arm();
+
+  // if (arm_result != mavsdk::Action::Result::Success) {
+  //   std::cerr << "Arming failed: " << arm_result << '\n';
+  // }
 
   forever {
 
