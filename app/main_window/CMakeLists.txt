@@ -4,13 +4,15 @@ set(SRC_FILES
         src/mainwindow.ui
         src/fastdds_thread.cpp
         src/realtime_plot_thread.cpp
+        src/mavsdk_thread.cpp
 )
 
 set(HEADER_FILES
         include/fastdds_thread.h
         include/realtime_plot_thread.h
         include/mainwindow.h
-        include/sub_variables.h     
+        include/sub_variables.h   
+        include/mavsdk_thread.h  
 )
 
 
