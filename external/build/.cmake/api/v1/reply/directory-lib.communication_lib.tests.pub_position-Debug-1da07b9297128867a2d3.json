@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/tests/pub_position",
+		"source" : "lib/communication_lib/tests/pub_position"
+	}
+}

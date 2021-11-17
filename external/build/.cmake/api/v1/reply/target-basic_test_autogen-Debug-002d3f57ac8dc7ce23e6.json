@@ -1,0 +1,65 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/copilot/tests/basic_test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "copilot_lib::@c0e66bfd1b27bd0c6187"
+		}
+	],
+	"id" : "basic_test_autogen::@5c07c473ef14a7e4612d",
+	"isGeneratorProvided" : true,
+	"name" : "basic_test_autogen",
+	"paths" : 
+	{
+		"build" : "lib/copilot/tests/basic_test",
+		"source" : "lib/copilot/tests/basic_test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/copilot/tests/basic_test/CMakeFiles/basic_test_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/copilot/tests/basic_test/CMakeFiles/basic_test_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

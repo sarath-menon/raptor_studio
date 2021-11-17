@@ -1,0 +1,58 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/communication_lib/tests/pub_position/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "pub_position_autogen::@ccaf3394212a24a1e7d3",
+	"isGeneratorProvided" : true,
+	"name" : "pub_position_autogen",
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/tests/pub_position",
+		"source" : "lib/communication_lib/tests/pub_position"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/tests/pub_position/CMakeFiles/pub_position_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/tests/pub_position/CMakeFiles/pub_position_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

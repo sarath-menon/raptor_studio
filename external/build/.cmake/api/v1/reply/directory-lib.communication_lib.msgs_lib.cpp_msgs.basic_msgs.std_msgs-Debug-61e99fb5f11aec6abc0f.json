@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/std_msgs",
+		"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/std_msgs"
+	}
+}

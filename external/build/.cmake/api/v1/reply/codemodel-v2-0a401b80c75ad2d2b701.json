@@ -1,0 +1,736 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6,
+						29
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "app",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-app-Debug-94c5f210ca04b1028ae5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "app"
+				},
+				{
+					"build" : "app/main_window",
+					"jsonFile" : "directory-app.main_window-Debug-36b77bb52082f96f0e40.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "app/main_window",
+					"targetIndexes" : 
+					[
+						18,
+						19
+					]
+				},
+				{
+					"build" : "app/components",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"jsonFile" : "directory-app.components-Debug-3c3438f8e8124b6a3bf3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "app/components"
+				},
+				{
+					"build" : "app/components/quad_window",
+					"jsonFile" : "directory-app.components.quad_window-Debug-be54a7d2ac07eaab2379.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "app/components/quad_window",
+					"targetIndexes" : 
+					[
+						16,
+						17
+					]
+				},
+				{
+					"build" : "app/components/realtime_plot",
+					"jsonFile" : "directory-app.components.realtime_plot-Debug-44bdc172cc40dd4ec7cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "app/components/realtime_plot",
+					"targetIndexes" : 
+					[
+						20,
+						21
+					]
+				},
+				{
+					"build" : "lib",
+					"childIndexes" : 
+					[
+						7,
+						25
+					],
+					"jsonFile" : "directory-lib-Debug-c12f15c6f888b43a891c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib"
+				},
+				{
+					"build" : "lib/communication_lib",
+					"childIndexes" : 
+					[
+						8,
+						17,
+						22
+					],
+					"jsonFile" : "directory-lib.communication_lib-Debug-a8511626f5b1c66c9925.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib",
+					"childIndexes" : 
+					[
+						9
+					],
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib-Debug-1b4ae9c668bd23b649e2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs",
+					"childIndexes" : 
+					[
+						10,
+						15
+					],
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs-Debug-ae4d153c8d60a185d83a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs",
+					"childIndexes" : 
+					[
+						11,
+						12,
+						13,
+						14
+					],
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.basic_msgs-Debug-fa77a6dd09e05bf656db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/std_msgs",
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.basic_msgs.std_msgs-Debug-61e99fb5f11aec6abc0f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/std_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/geometry_msgs",
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.basic_msgs.geometry_msgs-Debug-c10339b8ef59fcb18a39.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/geometry_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/actuator_msgs",
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.basic_msgs.actuator_msgs-Debug-1efb8d70d48c68dc3ac6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/actuator_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/sensor_msgs",
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.basic_msgs.sensor_msgs-Debug-ac829025c253918c9ea5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs/sensor_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs",
+					"childIndexes" : 
+					[
+						16
+					],
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.robot_msgs-Debug-3ca68f8124def966de74.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs/quadcopter_msgs",
+					"jsonFile" : "directory-lib.communication_lib.msgs_lib.cpp_msgs.robot_msgs.quadcopter_msgs-Debug-69a08b5fc58f0380a73f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs/quadcopter_msgs"
+				},
+				{
+					"build" : "lib/communication_lib/fastdds_lib",
+					"childIndexes" : 
+					[
+						18,
+						19,
+						20,
+						21
+					],
+					"jsonFile" : "directory-lib.communication_lib.fastdds_lib-Debug-fd1bfcb40164532af00a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/fastdds_lib"
+				},
+				{
+					"build" : "lib/communication_lib/fastdds_lib/fastddsgen_generated_files",
+					"jsonFile" : "directory-lib.communication_lib.fastdds_lib.fastddsgen_generated_files-Debug-adbcc12f1ce065f4afd3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/fastdds_lib/fastddsgen_generated_files",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "lib/communication_lib/fastdds_lib/publishers",
+					"jsonFile" : "directory-lib.communication_lib.fastdds_lib.publishers-Debug-f449cdaeb5a3f7fd2ad6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/fastdds_lib/publishers",
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"build" : "lib/communication_lib/fastdds_lib/subscribers",
+					"jsonFile" : "directory-lib.communication_lib.fastdds_lib.subscribers-Debug-202ce871793862c84244.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/fastdds_lib/subscribers"
+				},
+				{
+					"build" : "lib/communication_lib/fastdds_lib/domain_participants",
+					"jsonFile" : "directory-lib.communication_lib.fastdds_lib.domain_participants-Debug-5a4565bdbd266256c5c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 17,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/fastdds_lib/domain_participants",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "lib/communication_lib/tests",
+					"childIndexes" : 
+					[
+						23,
+						24
+					],
+					"jsonFile" : "directory-lib.communication_lib.tests-Debug-3dff9f2050fca3e02aad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/tests"
+				},
+				{
+					"build" : "lib/communication_lib/tests/sub_position",
+					"jsonFile" : "directory-lib.communication_lib.tests.sub_position-Debug-0ddd65550cbbe77d95af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/tests/sub_position",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "lib/communication_lib/tests/pub_position",
+					"jsonFile" : "directory-lib.communication_lib.tests.pub_position-Debug-1da07b9297128867a2d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 1,
+					"source" : "lib/communication_lib/tests/pub_position",
+					"targetIndexes" : 
+					[
+						10,
+						11
+					]
+				},
+				{
+					"build" : "lib/copilot",
+					"childIndexes" : 
+					[
+						26,
+						27
+					],
+					"jsonFile" : "directory-lib.copilot-Debug-1f62000c06404ad8cbd0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 2,
+					"source" : "lib/copilot"
+				},
+				{
+					"build" : "lib/copilot/copilot_lib",
+					"jsonFile" : "directory-lib.copilot.copilot_lib-Debug-244b54226b5cd3bfd402.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 2,
+					"source" : "lib/copilot/copilot_lib",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "lib/copilot/tests",
+					"childIndexes" : 
+					[
+						28
+					],
+					"jsonFile" : "directory-lib.copilot.tests-Debug-f281db9334c55d3a0a75.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 2,
+					"source" : "lib/copilot/tests"
+				},
+				{
+					"build" : "lib/copilot/tests/basic_test",
+					"jsonFile" : "directory-lib.copilot.tests.basic_test-Debug-835bcca4692912e95af6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 27,
+					"projectIndex" : 2,
+					"source" : "lib/copilot/tests/basic_test",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "external",
+					"childIndexes" : 
+					[
+						30
+					],
+					"jsonFile" : "directory-external-Debug-8482bb5b6989bf536f1d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "external"
+				},
+				{
+					"build" : "external/qcustomplot",
+					"jsonFile" : "directory-external.qcustomplot-Debug-f062b988d3cb057a8f64.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 29,
+					"projectIndex" : 0,
+					"source" : "external/qcustomplot",
+					"targetIndexes" : 
+					[
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						29,
+						30
+					],
+					"name" : "raptor_studio",
+					"targetIndexes" : 
+					[
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					],
+					"name" : "communication_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						25,
+						26,
+						27,
+						28
+					],
+					"name" : "copilot",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 28,
+					"id" : "basic_test::@5c07c473ef14a7e4612d",
+					"jsonFile" : "target-basic_test-Debug-b973843e52f9a5868b0b.json",
+					"name" : "basic_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 28,
+					"id" : "basic_test_autogen::@5c07c473ef14a7e4612d",
+					"jsonFile" : "target-basic_test_autogen-Debug-002d3f57ac8dc7ce23e6.json",
+					"name" : "basic_test_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "copilot_lib::@c0e66bfd1b27bd0c6187",
+					"jsonFile" : "target-copilot_lib-Debug-2206aaa060de439df730.json",
+					"name" : "copilot_lib",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "copilot_lib_autogen::@c0e66bfd1b27bd0c6187",
+					"jsonFile" : "target-copilot_lib_autogen-Debug-7834ca80f76e40e30425.json",
+					"name" : "copilot_lib_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "domain_participants_lib::@b2e32b9e7391717dd577",
+					"jsonFile" : "target-domain_participants_lib-Debug-55e45acc8f8c91d9d192.json",
+					"name" : "domain_participants_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "domain_participants_lib_autogen::@b2e32b9e7391717dd577",
+					"jsonFile" : "target-domain_participants_lib_autogen-Debug-3bebe0cb7862f005d3f9.json",
+					"name" : "domain_participants_lib_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "fastddsgen_generated_lib::@4e99ac00919b5d56bf11",
+					"jsonFile" : "target-fastddsgen_generated_lib-Debug-272b0f4451b9f099ca80.json",
+					"name" : "fastddsgen_generated_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "fastddsgen_generated_lib_autogen::@4e99ac00919b5d56bf11",
+					"jsonFile" : "target-fastddsgen_generated_lib_autogen-Debug-468c37d779d04b910c2f.json",
+					"name" : "fastddsgen_generated_lib_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "position_sub::@bbb7c630570bccd4cf80",
+					"jsonFile" : "target-position_sub-Debug-8e8599e1ab20403e9e41.json",
+					"name" : "position_sub",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "position_sub_autogen::@bbb7c630570bccd4cf80",
+					"jsonFile" : "target-position_sub_autogen-Debug-243f709467991165ea1a.json",
+					"name" : "position_sub_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "pub_position::@ccaf3394212a24a1e7d3",
+					"jsonFile" : "target-pub_position-Debug-4595b6dd0653d7aebdbd.json",
+					"name" : "pub_position",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "pub_position_autogen::@ccaf3394212a24a1e7d3",
+					"jsonFile" : "target-pub_position_autogen-Debug-7274dc9e2ed340de1902.json",
+					"name" : "pub_position_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "publishers_lib::@0887d7b588e83cf54fbf",
+					"jsonFile" : "target-publishers_lib-Debug-56a3eea914a6f3eb8ca6.json",
+					"name" : "publishers_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "publishers_lib_autogen::@0887d7b588e83cf54fbf",
+					"jsonFile" : "target-publishers_lib_autogen-Debug-8e3780d475dc9c9471d2.json",
+					"name" : "publishers_lib_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "qcustomplot_lib::@1ece4d75c54e2663830f",
+					"jsonFile" : "target-qcustomplot_lib-Debug-589809a7bcaa7df46419.json",
+					"name" : "qcustomplot_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "qcustomplot_lib_autogen::@1ece4d75c54e2663830f",
+					"jsonFile" : "target-qcustomplot_lib_autogen-Debug-90aae7db5af78a8a4252.json",
+					"name" : "qcustomplot_lib_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "quad_window_lib::@15bca8f65f8ffa569a88",
+					"jsonFile" : "target-quad_window_lib-Debug-d4dcf7e2604a1b850554.json",
+					"name" : "quad_window_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "quad_window_lib_autogen::@15bca8f65f8ffa569a88",
+					"jsonFile" : "target-quad_window_lib_autogen-Debug-d2a2ba44853e1a285fee.json",
+					"name" : "quad_window_lib_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "raptor_studio::@1755bb35e575adfe7f11",
+					"jsonFile" : "target-raptor_studio-Debug-1a920d5fc733532551f1.json",
+					"name" : "raptor_studio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "raptor_studio_autogen::@1755bb35e575adfe7f11",
+					"jsonFile" : "target-raptor_studio_autogen-Debug-fd18768c1ef81c40bdc6.json",
+					"name" : "raptor_studio_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "realtime_plot_lib::@a2c5d2593015a9b673e2",
+					"jsonFile" : "target-realtime_plot_lib-Debug-03f0afd3b2dacb8970ec.json",
+					"name" : "realtime_plot_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "realtime_plot_lib_autogen::@a2c5d2593015a9b673e2",
+					"jsonFile" : "target-realtime_plot_lib_autogen-Debug-629cb73efe42393430d5.json",
+					"name" : "realtime_plot_lib_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/srl/Documents/raptor_studio/build",
+		"source" : "/home/srl/Documents/raptor_studio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

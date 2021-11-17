@@ -1,0 +1,188 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/communication_lib/fastdds_lib/publishers/libpublishers_lib.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"lib/communication_lib/fastdds_lib/publishers/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_MAJOR=0"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_MINOR=6"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_PATCH=2"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/publishers"
+				},
+				{
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/publishers/publishers_lib_autogen/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/default_publisher"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/video_publisher"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include/foonathan_memory/comp"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include/foonathan_memory"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "publishers_lib_autogen::@0887d7b588e83cf54fbf"
+		}
+	],
+	"id" : "publishers_lib::@0887d7b588e83cf54fbf",
+	"name" : "publishers_lib",
+	"nameOnDisk" : "libpublishers_lib.a",
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/fastdds_lib/publishers",
+		"source" : "lib/communication_lib/fastdds_lib/publishers"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/fastdds_lib/publishers/publishers_lib_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "lib/communication_lib/fastdds_lib/publishers/default_publisher/default_publisher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "lib/communication_lib/fastdds_lib/publishers/video_publisher/video_publisher.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

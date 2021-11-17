@@ -1,0 +1,143 @@
+{
+	"BUILD_DIR" : "/home/srl/Documents/raptor_studio/build/app/main_window/raptor_studio_autogen",
+	"CMAKE_BINARY_DIR" : "/home/srl/Documents/raptor_studio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/srl/Documents/raptor_studio/build/app/main_window",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/srl/Documents/raptor_studio/app/main_window",
+	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/home/srl/Documents/raptor_studio/app/main_window/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/home/srl/Documents/raptor_studio",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/include/fastdds_thread.h",
+			"MU",
+			"6YEA5652QU/moc_fastdds_thread.cpp",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/include/mainwindow.h",
+			"MU",
+			"6YEA5652QU/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/include/realtime_plot_thread.h",
+			"MU",
+			"6YEA5652QU/moc_realtime_plot_thread.cpp",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/include/sub_variables.h",
+			"MU",
+			"6YEA5652QU/moc_sub_variables.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/srl/Documents/raptor_studio/build/app/main_window/raptor_studio_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/srl/Documents/raptor_studio/build/app/main_window/raptor_studio_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"FOONATHAN_MEMORY=1",
+		"FOONATHAN_MEMORY_VERSION_MAJOR=0",
+		"FOONATHAN_MEMORY_VERSION_MINOR=6",
+		"FOONATHAN_MEMORY_VERSION_PATCH=2",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_PRINTSUPPORT_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/srl/Documents/raptor_studio/build/app/main_window",
+		"/home/srl/Documents/raptor_studio/app/main_window",
+		"/home/srl/Documents/raptor_studio/app/main_window/include",
+		"/home/srl/Documents/raptor_studio/external/qcustomplot/include",
+		"/home/srl/Documents/raptor_studio/app/components/quad_window/include",
+		"/home/srl/Documents/raptor_studio/app/components/realtime_plot/include",
+		"/home/srl/Documents/raptor_studio/lib/copilot/copilot_lib/include",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/fastddsgen_generated_files/msg_definitions",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/default_publisher",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/video_publisher",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/subscribers/default_subscriber",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/default_participant",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/large_data_participant",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport",
+		"/opt/ros/galactic/include",
+		"/opt/ros/galactic/include/foonathan_memory/comp",
+		"/opt/ros/galactic/include/foonathan_memory",
+		"/usr/include",
+		"/include/c++/9",
+		"/include/x86_64-linux-gnu/c++/9",
+		"/include/c++/9/backward",
+		"/usr/lib/llvm-13/lib/clang/13.0.0/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/bin/clang++-13",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/srl/Documents/raptor_studio/build/app/main_window/raptor_studio_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/srl/Documents/raptor_studio/build/app/main_window/CMakeFiles/raptor_studio_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 12,
+	"SETTINGS_FILE" : "/home/srl/Documents/raptor_studio/build/app/main_window/CMakeFiles/raptor_studio_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/src/fastdds_thread.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/src/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/src/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/app/main_window/src/realtime_plot_thread.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

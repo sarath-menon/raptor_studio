@@ -1,0 +1,103 @@
+{
+	"BUILD_DIR" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/domain_participants_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/home/srl/Documents/raptor_studio/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants",
+	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/srl/Documents/raptor_studio",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/default_participant/default_participant.h",
+			"MU",
+			"GMKDH2LACI/moc_default_participant.cpp",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/large_data_participant/large_data_participant.h",
+			"MU",
+			"5JJKNV2AWJ/moc_large_data_participant.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/domain_participants_lib_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/domain_participants_lib_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"FOONATHAN_MEMORY=1",
+		"FOONATHAN_MEMORY_VERSION_MAJOR=0",
+		"FOONATHAN_MEMORY_VERSION_MINOR=6",
+		"FOONATHAN_MEMORY_VERSION_PATCH=2"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/default_participant",
+		"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/large_data_participant",
+		"/opt/ros/galactic/include",
+		"/opt/ros/galactic/include/foonathan_memory/comp",
+		"/opt/ros/galactic/include/foonathan_memory",
+		"/usr/include",
+		"/include/c++/9",
+		"/include/x86_64-linux-gnu/c++/9",
+		"/include/c++/9/backward",
+		"/usr/lib/llvm-13/lib/clang/13.0.0/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/bin/clang++-13",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/local/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/domain_participants_lib_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/CMakeFiles/domain_participants_lib_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 12,
+	"SETTINGS_FILE" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/fastdds_lib/domain_participants/CMakeFiles/domain_participants_lib_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/default_participant/default_participant.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/large_data_participant/large_data_participant.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

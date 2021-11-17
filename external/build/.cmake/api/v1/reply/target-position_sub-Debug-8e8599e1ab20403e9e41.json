@@ -1,0 +1,282 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/communication_lib/tests/sub_position/position_sub"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"lib/communication_lib/tests/sub_position/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_MAJOR=0"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_MINOR=6"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FOONATHAN_MEMORY_VERSION_PATCH=2"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/tests/sub_position"
+				},
+				{
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/tests/sub_position"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/srl/Documents/raptor_studio/build/lib/communication_lib/tests/sub_position/position_sub_autogen/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/msgs_lib/cpp_msgs/basic_msgs"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/msgs_lib/cpp_msgs/robot_msgs"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/fastddsgen_generated_files/msg_definitions"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/default_publisher"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/publishers/video_publisher"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/subscribers/default_subscriber"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/default_participant"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/srl/Documents/raptor_studio/lib/communication_lib/fastdds_lib/domain_participants/large_data_participant"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include/foonathan_memory/comp"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/opt/ros/galactic/include/foonathan_memory"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "fastddsgen_generated_lib::@4e99ac00919b5d56bf11"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "publishers_lib::@0887d7b588e83cf54fbf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "domain_participants_lib::@b2e32b9e7391717dd577"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "position_sub_autogen::@bbb7c630570bccd4cf80"
+		}
+	],
+	"id" : "position_sub::@bbb7c630570bccd4cf80",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/opt/ros/galactic/lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "lib/communication_lib/fastdds_lib/fastddsgen_generated_files/libfastddsgen_generated_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "lib/communication_lib/fastdds_lib/publishers/libpublishers_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "lib/communication_lib/fastdds_lib/domain_participants/libdomain_participants_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/opt/ros/galactic/lib/libfastrtps.so.2.3.4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/opt/ros/galactic/lib/libfastcdr.so.1.0.20",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/galactic/lib/libfoonathan_memory-0.6.2.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libtinyxml2.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libtinyxml2.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "position_sub",
+	"nameOnDisk" : "position_sub",
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/tests/sub_position",
+		"source" : "lib/communication_lib/tests/sub_position"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/tests/sub_position/position_sub_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/communication_lib/tests/sub_position/subscriber_test.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

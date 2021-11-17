@@ -1,0 +1,65 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"app/components/realtime_plot/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "qcustomplot_lib::@1ece4d75c54e2663830f"
+		}
+	],
+	"id" : "realtime_plot_lib_autogen::@a2c5d2593015a9b673e2",
+	"isGeneratorProvided" : true,
+	"name" : "realtime_plot_lib_autogen",
+	"paths" : 
+	{
+		"build" : "app/components/realtime_plot",
+		"source" : "app/components/realtime_plot"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/app/components/realtime_plot/CMakeFiles/realtime_plot_lib_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/app/components/realtime_plot/CMakeFiles/realtime_plot_lib_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

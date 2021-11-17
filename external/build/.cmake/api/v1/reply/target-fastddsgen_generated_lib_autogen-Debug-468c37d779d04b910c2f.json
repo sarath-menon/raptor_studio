@@ -1,0 +1,58 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/communication_lib/fastdds_lib/fastddsgen_generated_files/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "fastddsgen_generated_lib_autogen::@4e99ac00919b5d56bf11",
+	"isGeneratorProvided" : true,
+	"name" : "fastddsgen_generated_lib_autogen",
+	"paths" : 
+	{
+		"build" : "lib/communication_lib/fastdds_lib/fastddsgen_generated_files",
+		"source" : "lib/communication_lib/fastdds_lib/fastddsgen_generated_files"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/fastdds_lib/fastddsgen_generated_files/CMakeFiles/fastddsgen_generated_lib_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/communication_lib/fastdds_lib/fastddsgen_generated_files/CMakeFiles/fastddsgen_generated_lib_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,40 @@
+# Additional clean files
+cmake_minimum_required(VERSION 3.16)
+
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
+  file(REMOVE_RECURSE
+  "app/components/quad_window/CMakeFiles/quad_window_lib_autogen.dir/AutogenUsed.txt"
+  "app/components/quad_window/CMakeFiles/quad_window_lib_autogen.dir/ParseCache.txt"
+  "app/components/quad_window/quad_window_lib_autogen"
+  "app/components/realtime_plot/CMakeFiles/realtime_plot_lib_autogen.dir/AutogenUsed.txt"
+  "app/components/realtime_plot/CMakeFiles/realtime_plot_lib_autogen.dir/ParseCache.txt"
+  "app/components/realtime_plot/realtime_plot_lib_autogen"
+  "app/main_window/CMakeFiles/raptor_studio_autogen.dir/AutogenUsed.txt"
+  "app/main_window/CMakeFiles/raptor_studio_autogen.dir/ParseCache.txt"
+  "app/main_window/raptor_studio_autogen"
+  "external/qcustomplot/CMakeFiles/qcustomplot_lib_autogen.dir/AutogenUsed.txt"
+  "external/qcustomplot/CMakeFiles/qcustomplot_lib_autogen.dir/ParseCache.txt"
+  "external/qcustomplot/qcustomplot_lib_autogen"
+  "lib/communication_lib/fastdds_lib/domain_participants/CMakeFiles/domain_participants_lib_autogen.dir/AutogenUsed.txt"
+  "lib/communication_lib/fastdds_lib/domain_participants/CMakeFiles/domain_participants_lib_autogen.dir/ParseCache.txt"
+  "lib/communication_lib/fastdds_lib/domain_participants/domain_participants_lib_autogen"
+  "lib/communication_lib/fastdds_lib/fastddsgen_generated_files/CMakeFiles/fastddsgen_generated_lib_autogen.dir/AutogenUsed.txt"
+  "lib/communication_lib/fastdds_lib/fastddsgen_generated_files/CMakeFiles/fastddsgen_generated_lib_autogen.dir/ParseCache.txt"
+  "lib/communication_lib/fastdds_lib/fastddsgen_generated_files/fastddsgen_generated_lib_autogen"
+  "lib/communication_lib/fastdds_lib/publishers/CMakeFiles/publishers_lib_autogen.dir/AutogenUsed.txt"
+  "lib/communication_lib/fastdds_lib/publishers/CMakeFiles/publishers_lib_autogen.dir/ParseCache.txt"
+  "lib/communication_lib/fastdds_lib/publishers/publishers_lib_autogen"
+  "lib/communication_lib/tests/pub_position/CMakeFiles/pub_position_autogen.dir/AutogenUsed.txt"
+  "lib/communication_lib/tests/pub_position/CMakeFiles/pub_position_autogen.dir/ParseCache.txt"
+  "lib/communication_lib/tests/pub_position/pub_position_autogen"
+  "lib/communication_lib/tests/sub_position/CMakeFiles/position_sub_autogen.dir/AutogenUsed.txt"
+  "lib/communication_lib/tests/sub_position/CMakeFiles/position_sub_autogen.dir/ParseCache.txt"
+  "lib/communication_lib/tests/sub_position/position_sub_autogen"
+  "lib/copilot/copilot_lib/CMakeFiles/copilot_lib_autogen.dir/AutogenUsed.txt"
+  "lib/copilot/copilot_lib/CMakeFiles/copilot_lib_autogen.dir/ParseCache.txt"
+  "lib/copilot/copilot_lib/copilot_lib_autogen"
+  "lib/copilot/tests/basic_test/CMakeFiles/basic_test_autogen.dir/AutogenUsed.txt"
+  "lib/copilot/tests/basic_test/CMakeFiles/basic_test_autogen.dir/ParseCache.txt"
+  "lib/copilot/tests/basic_test/basic_test_autogen"
+  )
+endif()
