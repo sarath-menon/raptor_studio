@@ -162,9 +162,9 @@ MainWindow::MainWindow(QWidget *parent)
       ui->x_plot, ui->y_plot, ui->z_plot, ui->statusbar);
   fastdds_plot_thread->start();
 
-  // New modular plots. Needs debugging
-  realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
-  realtime_plots->start();
+  //   // New modular plots. Needs debugging
+  //   realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
+  //   realtime_plots->start();
 }
 
 MainWindow::~MainWindow() {
@@ -172,9 +172,9 @@ MainWindow::~MainWindow() {
   fastdds_plot_thread->requestInterruption();
   fastdds_plot_thread->wait();
 
-  realtime_plots->quit();
-  realtime_plots->requestInterruption();
-  realtime_plots->wait();
+  //   realtime_plots->quit();
+  //   realtime_plots->requestInterruption();
+  //   realtime_plots->wait();
 
   delete ui;
 }
