@@ -52,7 +52,7 @@ private:
   constexpr static float line_width = 2.5;
 
   // Quadcopter object
-  quad_obj *quad_1;
+  std::unique_ptr<quad_obj> quad_1;
 
   // Copilot object
   Copilot copilot_1;
