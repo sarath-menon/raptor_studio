@@ -3,7 +3,7 @@
 
 #include "copilot.h"
 #include "fastdds_thread.h"
-#include "quad_obj.h"
+#include "quad_window.h"
 #include "realtime_plot_thread.h"
 #include <QMainWindow>
 
@@ -52,7 +52,7 @@ private:
   constexpr static float line_width = 2.5;
 
   // Quadcopter object
-  std::unique_ptr<quad_obj> quad_1;
+  std::unique_ptr<QuadWindow> quad_1;
 
   // Copilot object
   Copilot copilot_1;

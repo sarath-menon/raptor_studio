@@ -146,13 +146,13 @@ MainWindow::MainWindow(QWidget *parent)
   ui->z_plot->axisRect()->setBackground(axisRectGradient);
 
   // Quad priperties window
-  quad_1 = std::make_unique<quad_obj>();
+  quad_1 = std::make_unique<QuadWindow>();
 
   // Add quad object to layout
-  QVBoxLayout *quad_obj_layout =
+  QVBoxLayout *quadwindow_layout =
       qobject_cast<QVBoxLayout *>(ui->parameters_frame->layout());
 
-  quad_obj_layout->insertWidget(0, quad_1.get());
+  quadwindow_layout->insertWidget(0, quad_1.get());
 
   // add plot to layout
   QVBoxLayout *plot_layout =
@@ -163,8 +163,8 @@ MainWindow::MainWindow(QWidget *parent)
   fastdds_plot_thread->start();
 
   // New modular plots. Needs debugging
-  //   realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
-  //   realtime_plots->start();
+  realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
+  realtime_plots->start();
 }
 
 MainWindow::~MainWindow() {
