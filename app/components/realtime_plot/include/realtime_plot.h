@@ -29,17 +29,17 @@ private:
   // parameters
 private:
   // Scrolling spped [lower is more]
-  int scroll_speed_ = 5;
+  int scroll_speed_{5};
 
   // scrren refresing [in seconds]
-  float refresh_time_ = 0.040;
+  float refresh_time_{0.040};
 
   // Graph value
   float y_val_{};
 
   // axes titles
-  std::string x_title = "x_axis";
-  std::string y_title = "time";
+  std::string x_title{"x_axis"};
+  std::string y_title{"time"};
 
   // Axes range
   float x_range{5};
@@ -47,7 +47,7 @@ private:
   float z_range{5};
 
   // Plot line width
-  constexpr static float line_width = 2.5;
+  constexpr static float line_width{2.5};
 
 public slots:
   void update_plot();
