@@ -158,22 +158,22 @@ MainWindow::MainWindow(QWidget *parent)
   QVBoxLayout *plot_layout =
       qobject_cast<QVBoxLayout *>(ui->plots_frame->layout());
 
-  obj = std::make_unique<fastdds_thread>(ui->x_plot, ui->y_plot, ui->z_plot,
-                                         ui->statusbar);
-  obj->start();
+  fastdds_plot_thread = std::make_unique<fastdds_thread>(
+      ui->x_plot, ui->y_plot, ui->z_plot, ui->statusbar);
+  fastdds_plot_thread->start();
 
-  plot_obj = std::make_unique<RealtimePlotThread>(plot_layout);
-  plot_obj->start();
+  x_pos_plos = std::make_unique<RealtimePlotThread>(plot_layout);
+  x_pos_plos->start();
 }
 
 MainWindow::~MainWindow() {
-  obj->quit();
-  obj->requestInterruption();
-  obj->wait();
+  fastdds_plot_thread->quit();
+  fastdds_plot_thread->requestInterruption();
+  fastdds_plot_thread->wait();
 
-  plot_obj->quit();
-  plot_obj->requestInterruption();
-  plot_obj->wait();
+  x_pos_plos->quit();
+  x_pos_plos->requestInterruption();
+  x_pos_plos->wait();
 
   delete ui;
   delete quad_1;

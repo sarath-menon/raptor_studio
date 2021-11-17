@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QStatusBar>
+#include <QString>
 #include <QTimer>
 #include <QWidget>
 #include <string>
@@ -38,13 +39,12 @@ private:
   float y_val_{};
 
   // axes titles
-  std::string x_title{"x_axis"};
-  std::string y_title{"time"};
+  QString xaxis_title_{"time"};
+  QString yaxis_title_{"data"};
 
   // Axes range
-  float x_range{5};
-  float y_range{5};
-  float z_range{5};
+  float xaxis_range_max{5};
+  float xaxis_range_min{-5};
 
   // Plot line width
   constexpr static float line_width{2.5};
@@ -52,14 +52,28 @@ private:
 public slots:
   void update_plot();
 
-  // Set k_p gain
-  void set_scroll_speed(float scroll_speed) { scroll_speed_ = scroll_speed; }
+  // Set scrolling speed of realtime plot
+  void set_scroll_speed(const float scroll_speed) {
+    scroll_speed_ = scroll_speed;
+  }
 
-  // Set k_p gain
-  void set_refresh_time(float refresh_time) { refresh_time_ = refresh_time; }
+  // Set refresh time for realtime plot
+  void set_refresh_time(const float refresh_time) {
+    refresh_time_ = refresh_time;
+  }
 
-  // Set k_p gain
-  void set_y_val(float y_val) { y_val_ = y_val; }
+  // Set ttime series data (y axis value) of reatime plot
+  void set_y_val(const float y_val) { y_val_ = y_val; }
+
+  // Set x axis title
+  void set_xaxis_title(const QString xaxis_title) {
+    xaxis_title_ = xaxis_title;
+  }
+
+  // Set y axis title
+  void set_yaxis_title(const QString yaxis_title) {
+    yaxis_title_ = yaxis_title;
+  }
 
 public:
   /// Getter function

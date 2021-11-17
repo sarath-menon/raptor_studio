@@ -9,14 +9,17 @@ RealtimePlotter::RealtimePlotter(QWidget *parent)
   QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
   timeTicker->setTimeFormat("%h:%m:%s");
 
+  ui->plot->xAxis->setTicker(timeTicker);
+  ui->plot->axisRect()->setupFullAxesBox();
+
   // Set plot properties
   ui->plot->addGraph();
   ui->plot->graph(0)->setPen(QPen(QColor(255, 255, 255)));
   ui->plot->axisRect()->setupFullAxesBox();
 
   // Set axes properties
-  ui->plot->yAxis->setRange(-x_range, x_range);
-  ui->plot->yAxis->setLabel("x_position");
+  ui->plot->yAxis->setRange(xaxis_range_min, xaxis_range_max);
+  ui->plot->yAxis->setLabel(yaxis_title_);
   ui->plot->yAxis->setLabelColor(QColor(255, 255, 255));
 
   // Some settings to make plot look nicer
