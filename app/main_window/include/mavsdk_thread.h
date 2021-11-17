@@ -11,6 +11,15 @@
 #include <QStatusBar>
 #include <QThread>
 #include <QVBoxLayout>
+#include <chrono>
+#include <cstdint>
+#include <future>
+#include <iostream>
+#include <mavsdk/mavsdk.h>
+#include <mavsdk/plugins/action/action.h>
+#include <mavsdk/plugins/telemetry/telemetry.h>
+#include <memory>
+#include <thread>
 
 class MavsdkThread : public QThread {
   Q_OBJECT

@@ -30,6 +30,14 @@ Qt${QT_VERSION_MAJOR}::PrintSupport
 qcustomplot_lib
 )
 
+# mavsdk dependencies
+target_link_libraries(raptor_studio PRIVATE 
+    MAVSDK::mavsdk_telemetry
+    MAVSDK::mavsdk_action
+    MAVSDK::mavsdk
+)
+
+
 # Other dependencies
 target_link_libraries(raptor_studio PRIVATE 
 components_lib
