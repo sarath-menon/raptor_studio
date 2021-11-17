@@ -162,8 +162,8 @@ MainWindow::MainWindow(QWidget *parent)
       ui->x_plot, ui->y_plot, ui->z_plot, ui->statusbar);
   fastdds_plot_thread->start();
 
-  x_pos_plos = std::make_unique<RealtimePlotThread>(plot_layout);
-  x_pos_plos->start();
+  realtime_plots = std::make_unique<RealtimePlotThread>(plot_layout);
+  realtime_plots->start();
 }
 
 MainWindow::~MainWindow() {
@@ -171,9 +171,9 @@ MainWindow::~MainWindow() {
   fastdds_plot_thread->requestInterruption();
   fastdds_plot_thread->wait();
 
-  x_pos_plos->quit();
-  x_pos_plos->requestInterruption();
-  x_pos_plos->wait();
+  realtime_plots->quit();
+  realtime_plots->requestInterruption();
+  realtime_plots->wait();
 
   delete ui;
   delete quad_1;

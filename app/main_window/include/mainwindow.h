@@ -39,7 +39,8 @@ private:
 private:
   std::unique_ptr<fastdds_thread> fastdds_plot_thread;
 
-  std::unique_ptr<RealtimePlotThread> x_pos_plos;
+  // Pointers to thread containing realtime plots
+  std::unique_ptr<RealtimePlotThread> realtime_plots;
 
   // Parameters
   // Distance to cover in plots [meters]

@@ -20,11 +20,15 @@ RealtimePlotThread::RealtimePlotThread(QVBoxLayout *layout, QObject *parent)
   // Set pointer to ui layout
   layout_ = layout;
 
-  // Create new plot
-  plot = std::make_unique<RealtimePlotter>();
+  // Create plots
+  x_plot = std::make_unique<RealtimePlotter>();
+  y_plot = std::make_unique<RealtimePlotter>();
+  z_plot = std::make_unique<RealtimePlotter>();
 
   // Insert plot in layout
-  layout->insertWidget(0, plot.get());
+  layout->insertWidget(0, x_plot.get());
+  layout->insertWidget(1, y_plot.get());
+  layout->insertWidget(2, z_plot.get());
 }
 
 RealtimePlotThread::~RealtimePlotThread() { // Fastdds
@@ -40,9 +44,12 @@ void RealtimePlotThread::run() { // Blocks until new data is available
       return;
     }
 
+    // no infinite wait so that control returns to application exit check
     mocap_sub->listener->wait_for_data_for_ms(100);
 
-    // Update y_val with latest data from subscriber
-    plot->set_y_val(sub::mocap_msg.pose.position.x);
+    // Update plots with latest data from subscriber
+    x_plot->set_y_val(sub::mocap_msg.pose.position.x);
+    y_plot->set_y_val(sub::mocap_msg.pose.position.y);
+    z_plot->set_y_val(sub::mocap_msg.pose.position.z);
   };
 }

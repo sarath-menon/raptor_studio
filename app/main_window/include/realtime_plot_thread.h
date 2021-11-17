@@ -32,8 +32,10 @@ private:
   // Pointer to plot layout
   QVBoxLayout *layout_;
 
-  // Create doamin participant
-  std::unique_ptr<RealtimePlotter> plot;
+  // Pointers to x,y,z position plots
+  std::unique_ptr<RealtimePlotter> x_plot;
+  std::unique_ptr<RealtimePlotter> y_plot;
+  std::unique_ptr<RealtimePlotter> z_plot;
 
   // parameters
   // Scrolling spped [lower is more]
